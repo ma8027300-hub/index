@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Luxury Two-Page Menu</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#111;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
+      min-height:100vh;
+      padding:40px;
+      color:white;
+    }
+
+    .menu-book{
+      width:1200px;
+      max-width:100%;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      background:#1b1b1b;
+      border-radius:25px;
+      overflow:hidden;
+      box-shadow:0 20px 50px rgba(0,0,0,0.6);
+    }
+
+    .page{
+      padding:50px;
+      position:relative;
+    }
+
+    .left-page{
+      background:#181818;
+      border-right:1px solid rgba(255,255,255,0.08);
+    }
+
+    .right-page{
+      background:#202020;
+    }
+
+    .menu-title{
+      font-size:42px;
+      font-weight:700;
+      margin-bottom:10px;
+      color:#f6c15c;
+      letter-spacing:2px;
+    }
+
+    .menu-subtitle{
+      color:#aaa;
+      margin-bottom:40px;
+      font-size:15px;
+      line-height:1.8;
+    }
+
+    .menu-section{
+      margin-bottom:35px;
+    }
+
+    .section-title{
+      font-size:22px;
+      color:#f6c15c;
+      margin-bottom:20px;
+      border-bottom:1px solid rgba(255,255,255,0.1);
+      padding-bottom:10px;
+      text-align:right;
+    }
+
+    .menu-image{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      border-radius:18px;
+      margin-bottom:30px;
+      border:2px solid rgba(255,255,255,0.08);
+      transition:0.3s;
+    }
+
+    .menu-image:hover{
+      transform:scale(1.02);
+    }
+
+    .badge{
+      position:absolute;
+      top:30px;
+      right:30px;
+      background:#FFFFFF;
+      color:#111;
+      padding:8px 18px;
+      border-radius:50px;
+      font-size:13px;
+      font-weight:600;
+    }
+
+    footer{
+      margin-top:25px;
+      color:#999;
+      font-size:14px;
+      text-align:center;
+      letter-spacing:1px;
+    }
+
+    footer span{
+      color:#f6c15c;
+      font-weight:600;
+    }
+
+    @media(max-width:900px){
+      .menu-book{
+        grid-template-columns:1fr;
+      }
+
+      .left-page{
+        border-right:none;
+        border-bottom:1px solid rgba(255,255,255,0.08);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="menu-book">
+
+    <!-- LEFT1 PAGE -->
+    <div class="page left-page">
+
+      <div class="badge">        <img src="LOGO.png" alt="Eastern Sweets" class="menu-image">
+</div>
+
+      <h1 class="menu-title">قصر البارون</h1>
+
+      <p class="menu-subtitle">
+        للحلويات الشرقية والغربية والمخبوزات
+      </p>
+
+      <!-- IMAGE PLACE -->
+      <!-- Change image path below -->
+      
+
+      <div class="menu-section">
+        <h2 class="section-title">الشرقي</h2>
+
+        <!-- IMAGE PLACE -->
+        <!-- Change image path below -->
+        <img src="شرقي.jpg" alt="Eastern Sweets" class="menu-image">
+      </div>
+
+    </div>
+
+    <!-- RIGHT PAGE -->
+    <div class="page right-page">
+
+      <div class="menu-section">
+        <h2 class="section-title">الغربي (التورت)</h2>
+
+        <!-- IMAGE PLACE -->
+        <!-- Change image path below -->
+      </div>
+
+      <div class="menu-section">
+
+        <!-- IMAGE PLACE -->
+        <!-- Change image path below -->
+        <img src="تورته.jpg" alt="Bakery Image" class="menu-image">
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; Made By <span>Alpha printer</span> &amp; <span>Mohamed Eltaweel</span>
+  </footer>
+
+</body>
+</html>
